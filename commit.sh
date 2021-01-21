@@ -1,6 +1,11 @@
 #!/bin/sh
 
+# initial commit do
+# git commit -m "initial commit"
+
 # git push elementary-loki to github
+
+
 
 dated=`date +%Y-%m-%d-%H%M%S`
 
