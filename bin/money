@@ -1,0 +1,3 @@
+#!/bin/sh
+
+LC_CTYPE=ru_RU.utf8 wine /home/brjed/.wine/drive_c/Program\ Files\ \(x86\)/AceMoney/AceMoney.exe 
