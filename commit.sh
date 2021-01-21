@@ -1,9 +1,6 @@
 #!/bin/sh
 
-# initial commit do
-# git commit -m "initial commit"
-
-# git push git commit -m "initial commit" to github
+# git push linux-mint-ulyssa-brjed to githublo
 
 dated=`date +%Y-%m-%d-%H%M%S`
 
@@ -14,3 +11,5 @@ for i in `git status | grep deleted | awk '{print $2}'`; do git rm $i; done
 
 git commit -m "$dated $(curl -s http://whatthecommit.com/index.txt)"
 git push -u origin main
+
+# non master, just a main. fck2020 (c) scooter
