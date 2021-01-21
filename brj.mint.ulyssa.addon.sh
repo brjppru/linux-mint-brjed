@@ -12,6 +12,7 @@ wget -nc https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.
 mkdir -p ~/.local/share/fonts/
 
 wget -nc https://github.com/be5invis/Iosevka/releases/download/v4.5.0/ttf-iosevka-4.5.0.zip
+wget -nc https://github.com/be5invis/Iosevka/releases/download/v4.5.0/ttf-iosevka-fixed-4.5.0.zip
 
 echo "copy font to ~/.local/share/fonts/ and run fc-cache -fv"
 
