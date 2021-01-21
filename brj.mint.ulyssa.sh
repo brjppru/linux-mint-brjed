@@ -49,8 +49,8 @@ sudo apt purge -y transmission-common transmission-gtk
 # =========================================================
 
 sudo apt update -y
-sudo apt install -y apt-transport-https ca-certificates aptitude dpkg
-sudo apt install -y git tig
+sudo apt install -y apt-transport-https ca-certificates aptitude dpkg 
+sudo apt install -y git tig figlet
 
 # =========================================================
 # add repos
@@ -94,6 +94,7 @@ echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-st
     figlet "autoclean"
     sudo apt-get -y autoclean
     sudo apt-get -y clean
+
     figlet "remove old packages"
     sudo dpkg -l | grep ^rc | awk '{print($2)}' | xargs sudo apt purge -y
     sudo dpkg -l 'linux-*' | sed '/^ii/!d;/'"$(uname -r | sed "s/\(.*\)-\([^0-9]\+\)/\1/")"'/d;s/^[^ ]* [^ ]* \([^ ]*\).*/\1/;/[0-9]/!d' | grep -v linux-libc-dev | xargs sudo apt purge -y
@@ -124,26 +125,28 @@ echo libbcg729-0:amd64	libbcg729-0/patent_compliance	boolean	true | debconf-set-
 # begin install's
 # =========================================================
 
+sudo apt install -y ssmtp whois
 sudo apt install -y acpi arandr minicom
 sudo apt install -y screenruler numlockx
 sudo apt install -y tshark iftop sngrep ngrep sockstat
 sudo apt install -y fonts-powerline
 sudo apt install -y vim-nox
-sudo apt install -y xclip xsel autocutsel copyq
+sudo apt install -y xclip xsel autocutsel
+sudo apt install -y guake
 sudo apt install -y gparted
 sudo apt install -y sublime-text
 sudo apt install -y telegram-desktop
 sudo apt install -y sqlite3 smbclient
 sudo apt install -y linphone
-sudo apt install -y putty git shellcheck
+sudo apt install -y putty git shellcheck tldr
 sudo apt install -y keepass2 keepassxc
 sudo apt install -y molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
-sudo apt install -y gnome-contacts gnome-system-monitor caffeine netcat sshfs
+sudo apt install -y gnome-contacts gnome-system-monitor caffeine
+sudo apt install -y netcat sshfs curlftpfs
 sudo apt install -y unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt install -y zip unzip p7zip p7zip-rar rar unrar
 sudo apt install -y mc genisoimage
 sudo apt install -y giggle git gitg
-sudo apt install -y ssmtp whois
 sudo apt install -y git zsh fonts-powerline
 sudo apt install -y cowsay curl dpkg aria2 figlet lnav
 sudo apt install -y hardinfo
@@ -151,6 +154,7 @@ sudo apt install -y intel-microcode
 sudo apt install -y remmina remmina-plugin-rdp
 sudo apt install -y doublecmd-gtk
 sudo apt install -y anydesk
+sudo apt install -y mediainfo
 
 # =========================================================
 # theme's
@@ -195,7 +199,8 @@ sudo apt install -y virtualbox virtualbox-ext-pack virtualbox-guest-additions-is
 # =========================================================
 # game's
 # =========================================================
-sudo apt install -y aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku hedgewars ioquake3
+sudo apt install -y aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku hedgewars
+sudo apt install -y ioquake3
 
 # =========================================================
 # the end
