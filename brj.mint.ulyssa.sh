@@ -138,7 +138,8 @@ sudo apt install -y sublime-text
 sudo apt install -y telegram-desktop
 sudo apt install -y sqlite3 smbclient
 sudo apt install -y linphone
-sudo apt install -y putty git shellcheck tldr
+sudo apt install -y putty putty-tools
+sudo apt install -y git shellcheck tldr
 sudo apt install -y keepass2 keepassxc
 sudo apt install -y molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
 sudo apt install -y gnome-contacts gnome-system-monitor caffeine
