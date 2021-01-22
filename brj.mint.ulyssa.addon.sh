@@ -16,3 +16,14 @@ wget -nc https://github.com/be5invis/Iosevka/releases/download/v4.5.0/ttf-iosevk
 
 echo "copy font to ~/.local/share/fonts/ and run fc-cache -fv"
 
+sudo systemctl enable fstrim.timer
+
+sudo update-alternatives --config editor
+sudo update-alternatives --config x-terminal-emulator
+
+mkdir ~/.ssh && chmod 700 ~/.ssh && touch ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys
+
+git config --global user.name "Roman Y. Bogdanov"
+git config --global user.email sam@brj.pp.ru
+git config --global color.ui true
+git config --global core.editor mcedit

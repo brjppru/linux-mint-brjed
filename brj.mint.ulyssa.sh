@@ -80,6 +80,8 @@ echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-st
 # sysup
 # =========================================================
 
+sysup() {
+
     figlet "keysdb"
     sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com `sudo aptitude update 2>&1 | grep -o '[0-9A-Z]\{16\}$' | xargs`
     # force update
@@ -104,6 +106,9 @@ echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-st
     sudo updatedb
     sudo rm "/var/crash/*"
     figlet "done"
+}
+
+sysup
 
 # =========================================================
 # wine 
@@ -125,14 +130,13 @@ echo libbcg729-0:amd64	libbcg729-0/patent_compliance	boolean	true | debconf-set-
 # begin install's
 # =========================================================
 
-sudo apt install -y ssmtp whois
+sudo apt install -y ssmtp whois mlocate net-tools pmount rsync tmux vrms bc net-tools pmount rsync sl speedtest-cli
 sudo apt install -y acpi arandr minicom
 sudo apt install -y screenruler numlockx
 sudo apt install -y tshark iftop sngrep ngrep sockstat
-sudo apt install -y fonts-powerline
 sudo apt install -y vim-nox
 sudo apt install -y xclip xsel autocutsel
-sudo apt install -y guake
+sudo apt install -y guake syncthing
 sudo apt install -y gparted
 sudo apt install -y sublime-text
 sudo apt install -y telegram-desktop
@@ -141,26 +145,27 @@ sudo apt install -y linphone
 sudo apt install -y putty putty-tools
 sudo apt install -y git shellcheck tldr
 sudo apt install -y keepass2 keepassxc
-sudo apt install -y molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes
-sudo apt install -y gnome-contacts gnome-system-monitor caffeine
+sudo apt install -y molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes keychain ssh-askpass
+sudo apt install -y gnome-contacts gnome-maps gnome-system-monitor caffeine qbittorrent
 sudo apt install -y netcat sshfs curlftpfs
 sudo apt install -y unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt install -y zip unzip p7zip p7zip-rar rar unrar
 sudo apt install -y mc genisoimage
 sudo apt install -y giggle git gitg
-sudo apt install -y git zsh fonts-powerline
+sudo apt install -y git zsh 
 sudo apt install -y cowsay curl dpkg aria2 figlet lnav
 sudo apt install -y hardinfo
-sudo apt install -y intel-microcode
+sudo apt install -y intel-microcode 
 sudo apt install -y remmina remmina-plugin-rdp
 sudo apt install -y doublecmd-gtk
-sudo apt install -y anydesk
-sudo apt install -y mediainfo
+sudo apt install -y anydesk vbetool
+sudo apt install -y mediainfo command-not-found
 
 # =========================================================
 # theme's
 # =========================================================
-sudo apt install -y xfonts-terminus ttf-dejavu fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree xfonts-terminus-oblique ttf-mscorefonts-installer
+sudo apt install -y xfonts-terminus ttf-dejavu fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree xfonts-terminus-oblique 
+sudo apt install -y ttf-mscorefonts-installer fonts-dejavu fonts-liberation2 fonts-ubuntu fonts-powerline
 sudo apt install -y comixcursors-righthanded-opaque comixcursors-righthanded
 
 # =========================================================

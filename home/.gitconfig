@@ -1,0 +1,7 @@
+[user]
+	name = Roman Y. Bogdanov
+	email = sam@brj.pp.ru
+[color]
+	ui = true
+[core]
+	editor = mcedit
