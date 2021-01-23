@@ -108,6 +108,8 @@ sysup() {
     figlet "done"
 }
 
+# "
+
 sysup
 
 # =========================================================
@@ -199,13 +201,13 @@ sudo apt install -y android-tools-adb android-tools-fastboot jmtpfs
 # =========================================================
 # virtualbox
 # =========================================================
-sudo apt install -y virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso
+#sudo apt install -y virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso
 #sudo apt install -y qemu-kvm bridge-utils virt-manager netcat
 
 # =========================================================
 # game's
 # =========================================================
-sudo apt install -y aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku hedgewars
+#sudo apt install -y aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku hedgewars
 sudo apt install -y ioquake3
 
 # =========================================================
