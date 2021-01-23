@@ -66,8 +66,7 @@ sysup() {
 # begin install's
 # =========================================================
 
-sudo apt install cpu-checker
-sudo apt install -y qemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager netcat libvirt-daemon-system virt-top libguestfs-tools libosinfo-bin
+sudo apt install -y  cpu-checkerqemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager netcat libvirt-daemon-system virt-top libguestfs-tools libosinfo-bin
 #sudo apt install -y qemu-system
 sudo gpasswd -a $USER libvirt
 
@@ -80,10 +79,11 @@ sudo kvm-ok
 cd /var/lib/libvirt/images/
 
 # https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html
-wget -nc https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
-wget -nc https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win.iso
 
-wget -nc https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win_amd64.vfd
+#wget -nc https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
+#wget -nc https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win_amd64.vfd
+
+wget -nc https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win.iso
 wget -nc https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win_amd64.vfd
 
 # =========================================================
