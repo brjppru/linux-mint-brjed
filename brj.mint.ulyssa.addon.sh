@@ -2,6 +2,10 @@
 
 export DEBIAN_FRONTEND=noninteractive
 
+# need run? fix me
+
+exit 0
+
 mkdir -p /tmp/debs
 cd /tmp/debs
 
@@ -20,6 +24,7 @@ sudo systemctl enable fstrim.timer
 
 sudo update-alternatives --config editor
 sudo update-alternatives --config x-terminal-emulator
+gsettings set org.gnome.rhythmbox.plugins.iradio initial-stations-loaded false
 
 mkdir ~/.ssh && chmod 700 ~/.ssh && touch ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys
 

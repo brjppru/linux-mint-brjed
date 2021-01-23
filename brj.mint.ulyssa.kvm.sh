@@ -66,7 +66,7 @@ sysup() {
 # begin install's
 # =========================================================
 
-sudo apt install -y  cpu-checkerqemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager netcat libvirt-daemon-system virt-top libguestfs-tools libosinfo-bin
+sudo apt install -y cpu-checker qemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager netcat libvirt-daemon-system virt-top libguestfs-tools libosinfo-bin
 #sudo apt install -y qemu-system
 sudo gpasswd -a $USER libvirt
 

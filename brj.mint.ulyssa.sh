@@ -154,7 +154,8 @@ sudo apt install -y unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutil
 sudo apt install -y zip unzip p7zip p7zip-rar rar unrar
 sudo apt install -y mc genisoimage
 sudo apt install -y giggle git gitg
-sudo apt install -y git zsh 
+sudo apt install -y git zsh
+sudo apt install -y evolution evolution-ews
 sudo apt install -y cowsay curl dpkg aria2 figlet lnav
 sudo apt install -y hardinfo
 sudo apt install -y intel-microcode 
@@ -162,11 +163,12 @@ sudo apt install -y remmina remmina-plugin-rdp
 sudo apt install -y doublecmd-gtk
 sudo apt install -y anydesk vbetool
 sudo apt install -y mediainfo command-not-found
+sudo apt install -y tilix
 
 # =========================================================
 # theme's
 # =========================================================
-sudo apt install -y xfonts-terminus ttf-dejavu fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree xfonts-terminus-oblique 
+sudo apt install -y xfonts-terminus ttf-dejavu fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree xfonts-terminus-oblique
 sudo apt install -y ttf-mscorefonts-installer fonts-dejavu fonts-liberation2 fonts-ubuntu fonts-powerline
 sudo apt install -y comixcursors-righthanded-opaque comixcursors-righthanded
 
