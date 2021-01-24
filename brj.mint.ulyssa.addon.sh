@@ -12,6 +12,7 @@ cd /tmp/debs
 wget -nc https://www.rescuetime.com/installers/rescuetime_current_amd64.deb
 wget -nc https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/nemo-megasync-xUbuntu_20.04_amd64.deb
 wget -nc https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
+wget -nc https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-1.24-Update7-Ubuntu-20.04-amd64.deb
 
 mkdir -p ~/.local/share/fonts/
 
