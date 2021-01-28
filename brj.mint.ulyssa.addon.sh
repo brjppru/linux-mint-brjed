@@ -13,11 +13,14 @@ wget -nc https://www.rescuetime.com/installers/rescuetime_current_amd64.deb
 wget -nc https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/nemo-megasync-xUbuntu_20.04_amd64.deb
 wget -nc https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
 wget -nc https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-1.24-Update7-Ubuntu-20.04-amd64.deb
+wget -nc https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
 
 mkdir -p ~/.local/share/fonts/
 
 wget -nc https://github.com/be5invis/Iosevka/releases/download/v4.5.0/ttf-iosevka-4.5.0.zip
 wget -nc https://github.com/be5invis/Iosevka/releases/download/v4.5.0/ttf-iosevka-fixed-4.5.0.zip
+
+wget https://www.xmind.net/zen/download/linux_deb/ -o xmind.deb
 
 echo "copy font to ~/.local/share/fonts/ and run fc-cache -fv"
 
