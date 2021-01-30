@@ -220,6 +220,7 @@ sudo apt install -y youtube-dl
 sudo apt install -y torbrowser-launcher
 sudo apt install -y easytag
 sudo apt install -y mixxx
+sudo apt install -y tilix ccze shasum bsd-mailx
 
 # =========================================================
 # nuke archives
