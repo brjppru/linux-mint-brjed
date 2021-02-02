@@ -6,6 +6,17 @@ export DEBIAN_FRONTEND=noninteractive
 
 exit 0
 
+
+# Add the "stable" channel to your APT sources:
+echo "deb https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
+
+# Add the release PGP keys:
+curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
+
+# Increase preference of Syncthing's packages ("pinning")
+printf "Package: *\nPin: origin apt.syncthing.net\nPin-Priority: 990\n" | sudo tee /etc/apt/preferences.d/syncthing
+
+
 mkdir -p /tmp/debs
 cd /tmp/debs
 
