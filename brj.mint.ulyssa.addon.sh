@@ -6,16 +6,15 @@ export DEBIAN_FRONTEND=noninteractive
 
 exit 0
 
+# syncthing here
 
 # Add the "stable" channel to your APT sources:
 echo "deb https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
-
 # Add the release PGP keys:
 curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
-
 # Increase preference of Syncthing's packages ("pinning")
 printf "Package: *\nPin: origin apt.syncthing.net\nPin-Priority: 990\n" | sudo tee /etc/apt/preferences.d/syncthing
-
+# syncthing here
 
 mkdir -p /tmp/debs
 cd /tmp/debs
@@ -34,6 +33,7 @@ wget -nc https://github.com/be5invis/Iosevka/releases/download/v4.5.0/ttf-iosevk
 wget https://www.xmind.net/zen/download/linux_deb/ -o xmind.deb
 
 echo "copy font to ~/.local/share/fonts/ and run fc-cache -fv"
+echo "copy winetricks to ~/bin"
 
 sudo systemctl enable fstrim.timer
 
@@ -47,3 +47,5 @@ git config --global user.name "Roman Y. Bogdanov"
 git config --global user.email sam@brj.pp.ru
 git config --global color.ui true
 git config --global core.editor mcedit
+
+echo "all done"
