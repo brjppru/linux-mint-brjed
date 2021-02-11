@@ -41,7 +41,7 @@ sudo apt install -y language-pack-en language-pack-gnome-en language-pack-gnome-
 sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
 sudo apt purge -y apparmor
-sudo apt purge -y thunderbird thunderbird-gnome-support
+#sudo apt purge -y thunderbird thunderbird-gnome-support
 sudo apt purge -y transmission-common transmission-gtk
 
 # =========================================================
@@ -193,7 +193,8 @@ sudo apt install -y elinks links lynx
 # multimedia's
 # =========================================================
 
-sudo apt install -y ubuntu-restricted-extras ffmpeg x264 lame vlc 
+sudo apt install -y ubuntu-restricted-extras ffmpeg x264 lame 
+sudo apt install -y vlc vlc-plugin-bittorrent
 
 # =========================================================
 # android tool's
