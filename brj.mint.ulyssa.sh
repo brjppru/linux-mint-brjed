@@ -65,7 +65,6 @@ figlet "add repos's"
 # =========================================================
 
 # wine
-
 wget -qO - https://dl.winehq.org/wine-builds/winehq.key | apt-key add -
 sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' 
 
@@ -75,6 +74,10 @@ sudo add-apt-repository -y ppa:mixxx/mixxx
 # anydesk
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
 echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+
+# down. makr down.
+#https://github.com/wereturtle/ghostwriter/releases
+sudo add-apt-repository -y ppa:wereturtle/ppa
 
 # =========================================================
 # sysup
@@ -213,15 +216,18 @@ sudo apt install -y android-tools-adb android-tools-fastboot jmtpfs
 #sudo apt install -y aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku hedgewars
 sudo apt install -y ioquake3
 
-# =========================================================
-# the end
-# =========================================================
 
 sudo apt install -y youtube-dl
 sudo apt install -y torbrowser-launcher
 sudo apt install -y picard
 sudo apt install -y mixxx
 sudo apt install -y tilix ccze shasum bsd-mailx
+sudo apt install -y ghostwriter
+
+# =========================================================
+# the end
+# =========================================================
+
 
 # =========================================================
 # nuke archives
