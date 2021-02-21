@@ -135,7 +135,7 @@ echo libbcg729-0:amd64	libbcg729-0/patent_compliance	boolean	true | debconf-set-
 # begin install's
 # =========================================================
 
-sudo apt install -y ssmtp whois mlocate net-tools pmount rsync tmux vrms bc net-tools pmount rsync sl speedtest-cli
+sudo apt install -y ssmtp whois mlocate net-tools pmount rsync tmux vrms bc net-tools pmount rsync sl speedtest-cli psmisc
 sudo apt install -y acpi arandr minicom
 sudo apt install -y screenruler numlockx
 sudo apt install -y tshark iftop sngrep ngrep sockstat
