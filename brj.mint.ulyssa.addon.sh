@@ -50,4 +50,16 @@ git config --global user.email sam@brj.pp.ru
 git config --global color.ui true
 git config --global core.editor mcedit
 
+# fuse for sshfs
+sudo groupadd fuse
+sudo usermod -aG fuse $USER
+
+# pulseaudiofix
+#2todo sed replace
+#В " _/etc/pulse/daemon.conf_ " прописать
+#
+#> default-sample-rate = 48000  
+#> avoid-resampling = yes
+
+
 echo "all done"
