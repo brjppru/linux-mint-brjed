@@ -49,7 +49,7 @@ sudo apt purge -y transmission-common transmission-gtk
 # =========================================================
 
 sudo apt update -y
-sudo apt install -y apt-transport-https ca-certificates aptitude dpkg 
+sudo apt install -y apt-transport-https ca-certificates aptitude dpkg
 sudo apt install -y git tig figlet
 
 # =========================================================
@@ -76,7 +76,7 @@ wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
 echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
 
 # down. makr down.
-#https://github.com/wereturtle/ghostwriter/releases
+# https://github.com/wereturtle/ghostwriter/releases
 sudo add-apt-repository -y ppa:wereturtle/ppa
 
 # =========================================================
@@ -103,7 +103,6 @@ sysup() {
     figlet "remove old packages"
     sudo dpkg -l | grep ^rc | awk '{print($2)}' | xargs sudo apt purge -y
     sudo dpkg -l 'linux-*' | sed '/^ii/!d;/'"$(uname -r | sed "s/\(.*\)-\([^0-9]\+\)/\1/")"'/d;s/^[^ ]* [^ ]* \([^ ]*\).*/\1/;/[0-9]/!d' | grep -v linux-libc-dev | xargs sudo apt purge -y
-
 
     figlet "update db"
     sudo updatedb
@@ -182,8 +181,8 @@ sudo apt install -y comixcursors-righthanded-opaque comixcursors-righthanded
 sudo apt install -y cups cups-pdf
 sudo apt install -y gtk-redshift xournal
 
-sudo apt install -y libreoffice libreoffice-pdfimport
-sudo apt install -y libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
+#sudo apt install -y libreoffice libreoffice-pdfimport
+#sudo apt install -y libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
 sudo apt install -y dia graphviz xdot
 sudo apt install -y imagemagick
 
@@ -196,8 +195,10 @@ sudo apt install -y elinks links lynx
 # multimedia's
 # =========================================================
 
-sudo apt install -y ubuntu-restricted-extras ffmpeg x264 lame 
-sudo apt install -y vlc vlc-plugin-bittorrent
+#sudo apt install -y ubuntu-restricted-extras 
+sudo apt install -y mint-meta-codecs ffmpeg x264 lame 
+sudo apt install -y vlc
+# vlc-plugin-bittorrent
 
 # =========================================================
 # android tool's
@@ -227,7 +228,6 @@ sudo apt install -y ghostwriter
 # =========================================================
 # the end
 # =========================================================
-
 
 # =========================================================
 # nuke archives
