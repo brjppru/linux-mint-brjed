@@ -27,6 +27,7 @@ wget -nc https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-
 wget -nc https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb
 wget -nc https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
 wget -nc https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors_amd64.deb
+wget -nc https://github.com/muesli/duf/releases/download/v0.6.0/duf_0.6.0_linux_amd64.deb
 
 mkdir -p ~/.local/share/fonts/
 
