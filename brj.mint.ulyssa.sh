@@ -140,7 +140,8 @@ sudo apt install -y screenruler numlockx
 sudo apt install -y tshark iftop sngrep ngrep sockstat
 sudo apt install -y vim-nox
 sudo apt install -y xclip xsel autocutsel
-sudo apt install -y guake syncthing
+sudo apt install -y guake
+# syncthing
 sudo apt install -y gparted
 sudo apt install -y sublime-text
 sudo apt install -y telegram-desktop
@@ -157,10 +158,11 @@ sudo apt install -y zip unzip p7zip p7zip-rar rar unrar
 sudo apt install -y mc genisoimage
 sudo apt install -y giggle git gitg
 sudo apt install -y git zsh
-sudo apt install -y evolution evolution-ews
+#sudo apt install -y evolution evolution-ews
 sudo apt install -y cowsay curl dpkg aria2 figlet lnav
 sudo apt install -y hardinfo
 sudo apt install -y intel-microcode 
+sudo apt install -y amd-microcode 
 sudo apt install -y remmina remmina-plugin-rdp
 sudo apt install -y doublecmd-gtk
 sudo apt install -y anydesk vbetool
@@ -196,7 +198,7 @@ sudo apt install -y elinks links lynx
 # =========================================================
 
 #sudo apt install -y ubuntu-restricted-extras 
-sudo apt install -y mint-meta-codecs ffmpeg x264 lame 
+sudo apt install -y mint-meta-codecs ffmpeg x264 lame
 sudo apt install -y vlc
 # vlc-plugin-bittorrent
 
@@ -215,8 +217,8 @@ sudo apt install -y android-tools-adb android-tools-fastboot jmtpfs
 # game's
 # =========================================================
 #sudo apt install -y aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku hedgewars
-sudo apt install -y ioquake3
 
+sudo apt install -y ioquake3
 
 sudo apt install -y youtube-dl
 sudo apt install -y torbrowser-launcher
