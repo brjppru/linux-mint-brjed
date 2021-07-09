@@ -42,7 +42,7 @@ sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
 sudo apt purge -y apparmor
 #sudo apt purge -y thunderbird thunderbird-gnome-support
-sudo apt purge -y transmission-common transmission-gtk
+#sudo apt purge -y transmission-common transmission-gtk
 
 # =========================================================
 # preinstall needs
@@ -141,7 +141,6 @@ sudo apt install -y tshark iftop sngrep ngrep sockstat
 sudo apt install -y vim-nox
 sudo apt install -y xclip xsel autocutsel
 sudo apt install -y guake
-# syncthing
 sudo apt install -y gparted
 sudo apt install -y sublime-text
 sudo apt install -y telegram-desktop
@@ -158,16 +157,17 @@ sudo apt install -y zip unzip p7zip p7zip-rar rar unrar
 sudo apt install -y mc genisoimage
 sudo apt install -y giggle git gitg
 sudo apt install -y git zsh
-#sudo apt install -y evolution evolution-ews
 sudo apt install -y cowsay curl dpkg aria2 figlet lnav
 sudo apt install -y hardinfo
-sudo apt install -y intel-microcode 
-sudo apt install -y amd-microcode 
+sudo apt install -y intel-microcode amd64-microcode
 sudo apt install -y remmina remmina-plugin-rdp
 sudo apt install -y doublecmd-gtk
 sudo apt install -y anydesk vbetool
 sudo apt install -y mediainfo command-not-found
 sudo apt install -y tilix
+
+#sudo apt install -y evolution evolution-ews
+# syncthing
 
 # =========================================================
 # theme's
@@ -185,6 +185,7 @@ sudo apt install -y gtk-redshift xournal
 
 #sudo apt install -y libreoffice libreoffice-pdfimport
 #sudo apt install -y libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
+
 sudo apt install -y dia graphviz xdot
 sudo apt install -y imagemagick
 
@@ -197,10 +198,7 @@ sudo apt install -y elinks links lynx
 # multimedia's
 # =========================================================
 
-#sudo apt install -y ubuntu-restricted-extras 
-sudo apt install -y mint-meta-codecs ffmpeg x264 lame
-sudo apt install -y vlc
-# vlc-plugin-bittorrent
+sudo apt install -y ubuntu-restricted-extras mint-meta-codecs libavcodec-extra58 ffmpeg x264 lame vlc
 
 # =========================================================
 # android tool's
@@ -208,24 +206,19 @@ sudo apt install -y vlc
 sudo apt install -y android-tools-adb android-tools-fastboot jmtpfs
 
 # =========================================================
-# virtualbox
-# =========================================================
-#sudo apt install -y virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso
-#sudo apt install -y qemu-kvm bridge-utils virt-manager netcat
-
-# =========================================================
 # game's
 # =========================================================
 #sudo apt install -y aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku hedgewars
 
 sudo apt install -y ioquake3
-
 sudo apt install -y youtube-dl
 sudo apt install -y torbrowser-launcher
 sudo apt install -y picard
 sudo apt install -y mixxx
-sudo apt install -y tilix ccze shasum bsd-mailx
+sudo apt install -y tilix ccze bsd-mailx
 sudo apt install -y ghostwriter
+sudo apt install -y gtkhash
+
 
 # =========================================================
 # the end

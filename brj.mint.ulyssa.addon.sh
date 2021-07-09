@@ -4,6 +4,8 @@ export DEBIAN_FRONTEND=noninteractive
 
 # need run? fix me
 
+exit 0
+
 # syncthing here
 
 ## Add the "stable" channel to your APT sources:
