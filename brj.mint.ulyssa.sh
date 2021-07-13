@@ -42,7 +42,7 @@ sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
 sudo apt purge -y apparmor
 #sudo apt purge -y thunderbird thunderbird-gnome-support
-#sudo apt purge -y transmission-common transmission-gtk
+sudo apt purge -y transmission-common transmission-gtk
 
 # =========================================================
 # preinstall needs
@@ -165,9 +165,6 @@ sudo apt install -y doublecmd-gtk
 sudo apt install -y anydesk vbetool
 sudo apt install -y mediainfo command-not-found
 sudo apt install -y tilix
-
-#sudo apt install -y evolution evolution-ews
-# syncthing
 
 # =========================================================
 # theme's
