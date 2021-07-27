@@ -1,16 +1,17 @@
-# the brj linux mint ulyssa
+# This is the brj linux mint (uma)
 
 ## Bolgenos?
 
-Yes. This is 346% bolgenos mint script.
+Yes. This is 123% bolgenos mint install script.
 
-## ulyssa
+## uma
 
-we start here
+Yes. Uma.
 
-## Why use ulyssa?
+## Why use ming? 
 
 why not?
 
 #
+
 // cu! brj
