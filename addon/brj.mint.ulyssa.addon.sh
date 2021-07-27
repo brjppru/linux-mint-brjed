@@ -31,15 +31,8 @@ wget -nc https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb
 wget -nc https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
 wget -nc https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors_amd64.deb
 wget -nc https://github.com/muesli/duf/releases/download/v0.6.0/duf_0.6.0_linux_amd64.deb
-
-mkdir -p ~/.local/share/fonts/
-
-wget -nc https://github.com/be5invis/Iosevka/releases/download/v4.5.0/ttf-iosevka-4.5.0.zip
-wget -nc https://github.com/be5invis/Iosevka/releases/download/v4.5.0/ttf-iosevka-fixed-4.5.0.zip
-
 wget https://www.xmind.net/zen/download/linux_deb/ -o xmind.deb
 
-echo "copy font to ~/.local/share/fonts/ and run fc-cache -fv"
 echo "copy winetricks to ~/bin"
 
 sudo systemctl enable fstrim.timer
