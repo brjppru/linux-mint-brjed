@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# git push linux-mint-ulyssa-brjed to githublo
+# git push linux-mint-brjed to github.lo
 
 dated=`date +%Y-%m-%d-%H%M%S`
 
