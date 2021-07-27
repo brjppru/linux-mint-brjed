@@ -4,6 +4,9 @@ export DEBIAN_FRONTEND=noninteractive
 
 # need run? fix me
 
+# data format for clock
+# [%V/%j] %Y-%m-%d  %H:%M
+
 exit 0
 
 # syncthing here
