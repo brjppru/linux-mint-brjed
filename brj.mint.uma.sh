@@ -2,10 +2,10 @@
 
 export DEBIAN_FRONTEND=noninteractive
 
-# this is the brj linux mint Ulyssa bolgenos script ;-)
+# this is the brj linux mint bolgenos script ;-)
 # http://brj.pp.ru/
 #
-# bolgenos for linuxmint-20.1-cinnamon-64bit.iso
+# bolgenos for linuxmint-20.2-cinnamon-64bit.iso
 #
 # do not connect to internet and download updates
 
@@ -41,16 +41,16 @@ sudo apt install -y language-pack-en language-pack-gnome-en language-pack-gnome-
 sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
 sudo apt purge -y apparmor
-#sudo apt purge -y thunderbird thunderbird-gnome-support
 sudo apt purge -y transmission-common transmission-gtk
+#sudo apt purge -y thunderbird thunderbird-gnome-support
 
 # =========================================================
 # preinstall needs
 # =========================================================
 
 sudo apt update -y
-sudo apt install -y apt-transport-https ca-certificates aptitude dpkg
-sudo apt install -y git tig figlet
+
+sudo apt install -y apt-transport-https ca-certificates aptitude dpkg apt-file git tig figlet
 
 # =========================================================
 # add repos
@@ -58,7 +58,6 @@ sudo apt install -y git tig figlet
 #
 
 figlet "add repos's"
-
 
 # =========================================================
 # wine + mixxx + anydesk
@@ -134,7 +133,8 @@ echo libbcg729-0:amd64	libbcg729-0/patent_compliance	boolean	true | debconf-set-
 # begin install's
 # =========================================================
 
-sudo apt install -y ssmtp whois mlocate net-tools pmount rsync tmux vrms bc net-tools pmount rsync sl speedtest-cli psmisc httping
+sudo apt install -y ssmtp whois mlocate net-tools pmount rsync tmux vrms bc net-tools 
+sudo apt install -y pmount rsync sl speedtest-cli psmisc httping
 sudo apt install -y acpi arandr minicom
 sudo apt install -y screenruler numlockx
 sudo apt install -y tshark iftop sngrep ngrep sockstat
@@ -149,7 +149,8 @@ sudo apt install -y linphone
 sudo apt install -y putty putty-tools
 sudo apt install -y git shellcheck tldr
 sudo apt install -y keepass2 keepassxc
-sudo apt install -y molly-guard ncdu openssh-server htop powertop uget preload pollinate smartmontools ethtool fdupes keychain ssh-askpass
+sudo apt install -y molly-guard ncdu openssh-server htop powertop uget preload 
+sudo apt install -y pollinate smartmontools ethtool fdupes keychain ssh-askpass
 sudo apt install -y gnome-contacts gnome-maps gnome-system-monitor caffeine qbittorrent
 sudo apt install -y netcat sshfs curlftpfs
 sudo apt install -y unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
@@ -165,49 +166,13 @@ sudo apt install -y doublecmd-gtk
 sudo apt install -y anydesk vbetool
 sudo apt install -y mediainfo command-not-found
 sudo apt install -y tilix
-
-# =========================================================
-# theme's
-# =========================================================
-sudo apt install -y xfonts-terminus ttf-dejavu fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree xfonts-terminus-oblique
-sudo apt install -y ttf-mscorefonts-installer fonts-dejavu fonts-liberation2 fonts-ubuntu fonts-powerline
-sudo apt install -y comixcursors-righthanded-opaque comixcursors-righthanded
-
-# =========================================================
-# office's
-# =========================================================
-
+sudo apt install -y ubuntu-restricted-extras mint-meta-codecs libavcodec-extra58 ffmpeg x264 lame vlc
+sudo apt install -y chromium-browser elinks links lynx
 sudo apt install -y cups cups-pdf
 sudo apt install -y gtk-redshift xournal
-
-#sudo apt install -y libreoffice libreoffice-pdfimport
-#sudo apt install -y libreoffice-lightproof-ru-ru libreoffice-help-ru libreoffice-l10n-ru
-
 sudo apt install -y dia graphviz xdot
 sudo apt install -y imagemagick
-
-# =========================================================
-# browser's
-# =========================================================
-sudo apt install -y elinks links lynx
-
-# =========================================================
-# multimedia's
-# =========================================================
-
-sudo apt install -y ubuntu-restricted-extras mint-meta-codecs libavcodec-extra58 ffmpeg x264 lame vlc
-
-# =========================================================
-# android tool's
-# =========================================================
 sudo apt install -y android-tools-adb android-tools-fastboot jmtpfs
-
-# =========================================================
-# game's
-# =========================================================
-#sudo apt install -y aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku hedgewars
-
-sudo apt install -y ioquake3
 sudo apt install -y youtube-dl
 sudo apt install -y torbrowser-launcher
 sudo apt install -y picard
@@ -216,18 +181,27 @@ sudo apt install -y tilix ccze bsd-mailx
 sudo apt install -y ghostwriter
 sudo apt install -y gtkhash
 
+# =========================================================
+# fonts + theme's
+# =========================================================
+
+sudo apt install -y xfonts-terminus ttf-dejavu fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree xfonts-terminus-oblique
+sudo apt install -y ttf-mscorefonts-installer fonts-dejavu fonts-liberation2 fonts-ubuntu fonts-powerline
+sudo apt install -y comixcursors-righthanded-opaque comixcursors-righthanded
+
+# =========================================================
+# games
+# =========================================================
+
+#sudo apt install -y aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku hedgewars
+#sudo apt install -y ioquake3
 
 # =========================================================
 # the end
 # =========================================================
 
-# =========================================================
-# nuke archives
-# =========================================================
-
 sudo rm -rf /var/cache/apt/archives
 sysup
-
 
 # =========================================================
 
