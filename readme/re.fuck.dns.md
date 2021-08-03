@@ -12,8 +12,9 @@ sudo systemctl stop systemd-resolved
 
 Then put the following line in the [main] section of your /etc/NetworkManager/NetworkManager.conf:
 
-`[main]
-+dns=default
+`
+[main]
++++dns=default
 `
 
 Delete the symlink /etc/resolv.conf
