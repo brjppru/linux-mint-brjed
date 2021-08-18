@@ -2,6 +2,8 @@
 
 # see https://www.tataranovich.com/cms/repository
 
+# need run? fix me
+
 exit 0
 
 sudo apt-get install -y curl gnupg

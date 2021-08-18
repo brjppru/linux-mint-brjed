@@ -1,0 +1,22 @@
+upstream:
+  default:
+    - 1.1.1.1
+    - 46.182.19.48
+    - 80.241.218.68
+    - tcp-tls:fdns1.dismail.de:853
+    - https://dns.digitale-gesellschaft.ch/dns-query
+blocking:
+  blackLists:
+    ads:
+      - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+  clientGroupsBlock:
+    default:
+      - ads
+port: 53
+httpPort: 4000
+# optional: use this DNS server to resolve blacklist urls and upstream DNS servers (DOH). Useful if no DNS resolver is configured an
+bootstrapDns: tcp:1.1.1.1
+# optional: Drop all AAAA query if set to true. Default: false
+disableIPv6: true
+
+
