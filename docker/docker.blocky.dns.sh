@@ -11,6 +11,11 @@ echo y | docker system prune --volumes
 
 sudo cp blocky.yml /opt/blocky.yml
 
+sudo docker volume create blocky_logs
+
 docker run -d --restart unless-stopped \
-    --name blocky -v /opt/blocky.yml:/app/config.yml -p 4000:4000 -p 53:53/udp spx01/blocky
+    -v blocky_logs:/logs \
+    --name blocky -v /opt/blocky.yml:/app/config.yml \
+    -p 4000:4000 -p 53:53/udp \
+    spx01/blocky
 

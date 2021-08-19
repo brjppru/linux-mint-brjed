@@ -1,3 +1,6 @@
+#
+# brj@blocky.conf
+#
 upstream:
   default:
     - 1.1.1.1
@@ -14,9 +17,13 @@ blocking:
       - ads
 port: 53
 httpPort: 4000
+logLevel: info
 # optional: use this DNS server to resolve blacklist urls and upstream DNS servers (DOH). Useful if no DNS resolver is configured an
 bootstrapDns: tcp:1.1.1.1
 # optional: Drop all AAAA query if set to true. Default: false
 disableIPv6: true
-
-
+#
+queryLog:
+    dir: /logs
+    perClient: true
+    logRetentionDays: 5
