@@ -149,7 +149,7 @@ sudo apt install -y linphone
 sudo apt install -y putty putty-tools
 sudo apt install -y git shellcheck tldr
 sudo apt install -y keepass2 keepassxc
-sudo apt install -y molly-guard ncdu openssh-server htop powertop uget preload 
+sudo apt install -y molly-guard ncdu openssh-server htop powertop uget preload
 sudo apt install -y pollinate smartmontools ethtool fdupes keychain ssh-askpass
 sudo apt install -y gnome-contacts gnome-maps gnome-system-monitor caffeine qbittorrent
 sudo apt install -y netcat sshfs curlftpfs
@@ -159,7 +159,7 @@ sudo apt install -y mc genisoimage
 sudo apt install -y giggle git gitg
 sudo apt install -y git zsh
 sudo apt install -y cowsay curl dpkg aria2 figlet lnav
-sudo apt install -y hardinfo batcat dconf-editor
+sudo apt install -y hardinfo batcat dconf-editor edid-decode read-edid
 sudo apt install -y intel-microcode amd64-microcode
 sudo apt install -y remmina remmina-plugin-rdp
 sudo apt install -y doublecmd-gtk
