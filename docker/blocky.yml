@@ -1,6 +1,7 @@
 #
-# brj@blocky.conf
+# brj lucky blocky.conf
 #
+
 upstream:
   default:
     - 1.1.1.1
