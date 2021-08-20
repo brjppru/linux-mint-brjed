@@ -13,9 +13,11 @@ sudo cp blocky.yml /opt/blocky.yml
 
 sudo docker volume create blocky_logs
 
-docker run -d --restart unless-stopped \
+docker run -d \
+    --restart always \
     -v blocky_logs:/logs \
-    --name blocky -v /opt/blocky.yml:/app/config.yml \
+    --name blocky \
+    -v /opt/blocky.yml:/app/config.yml \
     -p 4000:4000 -p 53:53/udp \
     spx01/blocky
 

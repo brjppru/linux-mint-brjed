@@ -152,7 +152,7 @@ sudo apt install -y keepass2 keepassxc
 sudo apt install -y molly-guard ncdu openssh-server htop powertop uget preload
 sudo apt install -y pollinate smartmontools ethtool fdupes keychain ssh-askpass
 sudo apt install -y gnome-contacts gnome-maps gnome-system-monitor caffeine qbittorrent
-sudo apt install -y netcat sshfs curlftpfs
+sudo apt install -y netcat sshfs curlftpfs davfs2
 sudo apt install -y unace unrar zip unzip xz-utils p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract wget curl
 sudo apt install -y zip unzip p7zip p7zip-rar rar unrar
 sudo apt install -y mc genisoimage
