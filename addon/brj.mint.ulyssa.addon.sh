@@ -53,6 +53,7 @@ sudo groupadd fuse
 sudo usermod -aG fuse $USER
 
 # pulseaudiofix
+sudo usermod -aG davfs2 $USER
 #2todo sed replace
 #В " _/etc/pulse/daemon.conf_ " прописать
 #

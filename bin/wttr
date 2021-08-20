@@ -1,3 +1,5 @@
 #!/bin/sh
 
 curl -s 'wttr.in/{innopolis,kazan,krasnoyarsk}?format=3'
+
+notify-send "`curl -s 'wttr.in/{innopolis,kazan,krasnoyarsk}?format=3'`" -i weather

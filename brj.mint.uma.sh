@@ -137,7 +137,7 @@ sudo apt install -y ssmtp whois mlocate net-tools pmount rsync tmux vrms bc net-
 sudo apt install -y pmount rsync sl speedtest-cli psmisc httping
 sudo apt install -y acpi arandr minicom
 sudo apt install -y screenruler numlockx
-sudo apt install -y tshark iftop sngrep ngrep sockstat linssid
+sudo apt install -y tshark iftop sngrep ngrep sockstat linssid nmap
 sudo apt install -y vim-nox
 sudo apt install -y xclip xsel autocutsel
 sudo apt install -y guake
