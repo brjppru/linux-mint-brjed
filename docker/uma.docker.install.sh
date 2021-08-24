@@ -35,24 +35,27 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] 
 apt update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+sudo chmod g+rwx "$HOME/.docker" -R
+sudo systemctl enable docker.service
+sudo systemctl enable containerd.service
 
 sudo docker run hello-world
-
-sudo docker run -d -v /var/run/docker.sock:/var/run/docker.sock --name watchtower containrrr/watchtower --cleanup --label-enable --restart unless-stopped
-
-sudo docker volume create portainer_data
-sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 
 # =========================================================
 # nuke archives
 # =========================================================
 
 sudo rm -rf /var/cache/apt/archives
-sysup
 
 # =========================================================
 
-notify-send -i utilities-terminal brj.done "All tasks ok successfully! ;-)"
+notify-send -i utilities-terminal "All tasks ok successfully! ;-)"
 
 # =========================================================
 
