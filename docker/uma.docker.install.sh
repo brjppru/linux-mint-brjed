@@ -39,7 +39,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 
 sudo groupadd docker
 sudo usermod -aG docker $USER
-newgrp docker
+sudo newgrp docker
 sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
 sudo chmod g+rwx "$HOME/.docker" -R
 sudo systemctl enable docker.service
