@@ -13,6 +13,7 @@ rm -rf /tmp/debs/debs.txt
 # get my good's
 
 tee <<EOF /tmp/debs/debs.txt >/dev/null
+https://zoom.us/client/latest/zoom_amd64.deb
 https://www.rescuetime.com/installers/rescuetime_current_amd64.deb
 https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/nemo-megasync-xUbuntu_20.04_amd64.deb
 https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
