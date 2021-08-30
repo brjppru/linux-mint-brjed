@@ -44,5 +44,22 @@ sudo usermod -aG davfs2 $USER
 #> default-sample-rate = 48000  
 #> avoid-resampling = yes
 
+#systemctl enable fstrim.timer
+
+config_sudo() {
+banner "Configure sudo"
+apt-get -y install sudo
+# Add config file to /etc/sudoers.d/ to allow $User extra privileges..
+local file
+file="/etc/sudoers.d/sudoers_${User}"
+if [[ -f "$file" ]]; then
+    echo ""
+    echo "$file already exists. Skipping ..."
+else
+    echo "$User ALL=(ALL) NOPASSWD: ALL" > $file
+    usermod -aG sudo $User
+fi
+}
+
 
 echo "all done"

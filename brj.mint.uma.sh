@@ -133,7 +133,12 @@ echo libbcg729-0:amd64	libbcg729-0/patent_compliance	boolean	true | debconf-set-
 # begin install's
 # =========================================================
 
-sudo apt install -y ssmtp whois mlocate net-tools pmount rsync tmux vrms bc net-tools 
+sudo apt install -y ssmtp whois mlocate net-tools pmount rsync tmux vrms bc net-tools
+sudo apt install -y apt-file apt-show-versions apt-utils aptitude
+sudo apt install -y cowsay cryptsetup curl figlet git gnupg htop keychain lolcat
+sudo apt install -y mlocate neofetch neovim net-tools nmap openssh-server
+sudo apt install -y rsync shellcheck sl speedtest-cli tmux unzip wget whois
+sudo apt install -y pavucontrol rofi
 sudo apt install -y pmount rsync sl speedtest-cli psmisc httping
 sudo apt install -y acpi arandr minicom
 sudo apt install -y screenruler numlockx
