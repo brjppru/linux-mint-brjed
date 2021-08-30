@@ -9,16 +9,6 @@ exit 0
 # data format for clock
 # [%V/%j] %Y-%m-%d  %H:%M
 
-# syncthing here
-
-## Add the "stable" channel to your APT sources:
-#echo "deb https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
-# Add the release PGP keys:
-#curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
-# Increase preference of Syncthing's packages ("pinning")
-#printf "Package: *\nPin: origin apt.syncthing.net\nPin-Priority: 990\n" | sudo tee /etc/apt/preferences.d/syncthing
-# syncthing here
-
 sudo systemctl enable fstrim.timer
 
 sudo update-alternatives --config editor
@@ -38,6 +28,7 @@ sudo usermod -aG fuse $USER
 
 # pulseaudiofix
 sudo usermod -aG davfs2 $USER
+
 #2todo sed replace
 #В " _/etc/pulse/daemon.conf_ " прописать
 #
@@ -45,21 +36,5 @@ sudo usermod -aG davfs2 $USER
 #> avoid-resampling = yes
 
 #systemctl enable fstrim.timer
-
-config_sudo() {
-banner "Configure sudo"
-apt-get -y install sudo
-# Add config file to /etc/sudoers.d/ to allow $User extra privileges..
-local file
-file="/etc/sudoers.d/sudoers_${User}"
-if [[ -f "$file" ]]; then
-    echo ""
-    echo "$file already exists. Skipping ..."
-else
-    echo "$User ALL=(ALL) NOPASSWD: ALL" > $file
-    usermod -aG sudo $User
-fi
-}
-
 
 echo "all done"
