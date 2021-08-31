@@ -143,7 +143,7 @@ sudo apt install -y pmount rsync sl speedtest-cli psmisc httping
 sudo apt install -y acpi arandr minicom
 sudo apt install -y screenruler numlockx
 sudo apt install -y tshark iftop sngrep ngrep sockstat linssid nmap
-sudo apt install -y vim-nox
+sudo apt install -y vim-nox fbreader
 sudo apt install -y xclip xsel autocutsel
 sudo apt install -y guake
 sudo apt install -y gparted
@@ -171,7 +171,7 @@ sudo apt install -y doublecmd-gtk
 sudo apt install -y anydesk vbetool
 sudo apt install -y mediainfo command-not-found
 sudo apt install -y tilix
-sudo apt install -y ubuntu-restricted-extras mint-meta-codecs libavcodec-extra58 ffmpeg x264 lame vlc
+sudo apt install -y ubuntu-restricted-extras mint-meta-codecs libavcodec-extra58 ffmpeg x264 lame vlc v4l-utils
 sudo apt install -y chromium-browser elinks links lynx
 sudo apt install -y cups cups-pdf
 sudo apt install -y gtk-redshift xournal
