@@ -1,0 +1,10 @@
+#!/bin/sh
+
+for f in /home/brjppru/.thunderbird/*/*.sqlite; 
+    do 
+    echo $f
+    ls -la $f
+    sqlite3 $f "VACUUM;";
+    ls -la $f
+    done
+

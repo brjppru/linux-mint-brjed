@@ -1,11 +1,3 @@
 #!/bin/sh
 
-#curl -s 'wttr.in/{innopolis,kazan,krasnoyarsk}?format=3'
-
-#notify-send "`curl -s 'wttr.in/{innopolis,kazan,krasnoyarsk}?format=3'`" -i weather
-
-ansiweather -l innopolis -d true -u metric -h true -s true -w true
-ansiweather -l kazan -d true -u metric -h true -s true -w true
-ansiweather -l krasnoyarsk -d true -u metric -h true -s true -w true
-
-
+curl -s 'wttr.in/{innopolis,kazan,krasnoyarsk}?format=3'
