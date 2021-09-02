@@ -172,7 +172,7 @@ sudo apt install -y anydesk vbetool
 sudo apt install -y mediainfo command-not-found
 sudo apt install -y tilix
 sudo apt install -y ubuntu-restricted-extras mint-meta-codecs libavcodec-extra58 ffmpeg x264 lame vlc v4l-utils
-sudo apt install -y chromium-browser elinks links lynx
+sudo apt install -y midori chromium-browser elinks links lynx
 sudo apt install -y cups cups-pdf
 sudo apt install -y gtk-redshift xournal
 sudo apt install -y dia graphviz xdot
