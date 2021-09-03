@@ -17,7 +17,7 @@ gsettings set org.gnome.rhythmbox.plugins.iradio initial-stations-loaded false
 
 mkdir ~/.ssh && chmod 700 ~/.ssh && touch ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys
 
-git config --global user.name "Roman Y. Bogdanov"
+git config --global user.name "Grzegorz Brzęczyszczykiewicz"
 git config --global user.email sam@brj.pp.ru
 git config --global color.ui true
 git config --global core.editor mcedit
