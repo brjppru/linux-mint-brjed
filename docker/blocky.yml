@@ -4,9 +4,8 @@
 
 upstream:
   default:
-    - 1.1.1.1
-    - 46.182.19.48
-    - 80.241.218.68
+    - tcp-tls:1.1.1.1 # one.one.one.one
+    - tcp-tls:1.0.0.1 # one.one.one.one
     - tcp-tls:fdns1.dismail.de:853
     - https://dns.digitale-gesellschaft.ch/dns-query
 blocking:
@@ -14,7 +13,12 @@ blocking:
     ads:
       - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
       - https://winhelp2002.mvps.org/hosts.txt
+      - https://adaway.org/hosts.txt
+      - https://v.firebog.net/hosts/AdguardDNS.txt
+      - https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts
       - https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt
+#     tracking-telemetry
+      - https://easylist.to/easylist/easyprivacy.txt
   clientGroupsBlock:
     default:
       - ads
@@ -25,6 +29,15 @@ logLevel: info
 bootstrapDns: tcp:1.1.1.1
 # optional: Drop all AAAA query if set to true. Default: false
 disableIPv6: true
+#
+# Prometheus Statistic
+#prometheus:
+#  enable: true
+#  path: /metrics
+#
+logLevel: info
+logFormat: text
+logTimestamp: true
 #
 queryLog:
     dir: /logs

@@ -10,11 +10,12 @@ docker pull spx01/blocky
 echo y | docker system prune --volumes
 
 sudo cp blocky.yml /opt/blocky.yml
-
 sudo docker volume create blocky_logs
+sudo docker volume create block_blacklist
 
 docker run -d \
     --restart always \
+    -v blocky_blacklist:/app/blacklists/ \
     -v blocky_logs:/logs \
     --name blocky \
     -v /opt/blocky.yml:/app/config.yml \
