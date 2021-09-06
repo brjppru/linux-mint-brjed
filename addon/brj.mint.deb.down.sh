@@ -31,4 +31,10 @@ aria2c \
     --human-readable=true --download-result=full --file-allocation=none \
     --summary-interval=15
 
-echo "all done"
+echo "pochti. all done"
+
+exit 0
+
+cd /tmp/debs
+dpkg -i *.dev
+sudo apt -y --fix-broken install
