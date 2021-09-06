@@ -10,6 +10,7 @@ docker pull spx01/blocky
 echo y | docker system prune --volumes
 
 sudo cp blocky.yml /opt/blocky.yml
+
 sudo docker volume create blocky_logs
 sudo docker volume create block_blacklist
 

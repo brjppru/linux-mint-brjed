@@ -17,14 +17,12 @@ blocking:
       - https://v.firebog.net/hosts/AdguardDNS.txt
       - https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts
       - https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt
-#     tracking-telemetry
       - https://easylist.to/easylist/easyprivacy.txt
   clientGroupsBlock:
     default:
       - ads
 port: 53
 httpPort: 4000
-logLevel: info
 # optional: use this DNS server to resolve blacklist urls and upstream DNS servers (DOH). Useful if no DNS resolver is configured an
 bootstrapDns: tcp:1.1.1.1
 # optional: Drop all AAAA query if set to true. Default: false
