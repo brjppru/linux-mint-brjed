@@ -10,7 +10,6 @@ user=`whoami`
 
 echo $user:$user
 
-
 killall -9 telegram-desktop
 
 sudo apt-mark unhold telegram-desktop
