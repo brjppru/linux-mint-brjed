@@ -43,4 +43,4 @@ sudo cp -v /tmp/telega/telegram-updater /usr/bin
 
 /usr/bin/telegram-desktop &
 
-echo "ok, i sart it!"
+echo "ok, i start it!"
