@@ -2,12 +2,18 @@
 # brj lucky blocky.conf
 #
 
+# see https://github.com/0xERR0R/blocky
+# https://0xerr0r.github.io/blocky/
+
+#
+
 upstream:
   default:
     - tcp-tls:1.1.1.1 # one.one.one.one
     - tcp-tls:1.0.0.1 # one.one.one.one
     - tcp-tls:fdns1.dismail.de:853
     - https://dns.digitale-gesellschaft.ch/dns-query
+    - https://dns-unfiltered.adguard.com/dns-query
 blocking:
   blackLists:
     ads:
@@ -21,14 +27,17 @@ blocking:
   clientGroupsBlock:
     default:
       - ads
+#
 port: 53
 httpPort: 4000
 # optional: use this DNS server to resolve blacklist urls and upstream DNS servers (DOH). Useful if no DNS resolver is configured an
 bootstrapDns: tcp:1.1.1.1
+#bootstrapDns: tcp:94.140.14.140
 # optional: Drop all AAAA query if set to true. Default: false
 disableIPv6: true
 #
 # Prometheus Statistic
+#
 #prometheus:
 #  enable: true
 #  path: /metrics
@@ -41,3 +50,8 @@ queryLog:
     dir: /logs
     perClient: true
     logRetentionDays: 5
+#
+caching:
+  minTime: 5
+  maxTime: 30
+  prefetching: true

@@ -48,3 +48,7 @@ Host *
 # tmux
 
 set-option -g update-environment "DISPLAY SSH_ASKPASS SSH_AUTH_SOCK SSH_AGENT_PID SSH_CONNECTION WINDOWID XAUTHORITY"
+
+# 
+
+sudo ufw allow from 203.0.113.0/24 proto tcp to any port 22
