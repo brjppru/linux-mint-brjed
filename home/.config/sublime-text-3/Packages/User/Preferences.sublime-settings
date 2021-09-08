@@ -1,0 +1,12 @@
+{
+	"theme": "Default.sublime-theme",
+	"color_scheme": "Packages/Color Scheme - Default/Sixteen.sublime-color-scheme",
+	"font_size": 16,
+	"font_face": "Fira Code Retina",
+	"update_check": false,
+	
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+}
