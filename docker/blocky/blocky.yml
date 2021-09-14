@@ -5,6 +5,8 @@
 # see https://github.com/0xERR0R/blocky
 # https://0xerr0r.github.io/blocky/
 
+# RTK open resolver 195.208.4.1 и 195.208.5.1.
+
 #
 
 upstream:
