@@ -50,7 +50,7 @@ sudo apt purge -y transmission-common transmission-gtk
 
 sudo apt update -y
 
-sudo apt install -y apt-transport-https ca-certificates aptitude dpkg apt-file git tig figlet
+sudo apt install -y apt-transport-https ca-certificates aptitude dpkg apt-file git git-flow tig figlet
 
 # =========================================================
 # add repos
