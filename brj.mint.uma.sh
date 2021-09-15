@@ -50,7 +50,7 @@ sudo apt purge -y transmission-common transmission-gtk
 
 sudo apt update -y
 
-sudo apt install -y apt-transport-https ca-certificates aptitude dpkg apt-file git git-flow tig figlet
+sudo apt install -y apt-transport-https ca-certificates aptitude dpkg apt-file git git-flow tig figlet etckeeper
 
 # =========================================================
 # add repos
@@ -145,7 +145,6 @@ sudo apt install -y screenruler numlockx
 sudo apt install -y tshark iftop sngrep ngrep sockstat linssid nmap
 sudo apt install -y vim-nox fbreader
 sudo apt install -y xclip xsel autocutsel
-sudo apt install -y guake
 sudo apt install -y gparted
 sudo apt install -y sublime-text
 sudo apt install -y telegram-desktop
