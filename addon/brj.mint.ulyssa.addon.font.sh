@@ -4,6 +4,8 @@ export DEBIAN_FRONTEND=noninteractive
 
 # need run? fix me
 
+# https://github.com/ryanoasis/nerd-fonts/releases
+
 exit 0
 
 mkdir -p ~/.local/share/fonts/
@@ -18,6 +20,7 @@ https://github.com/be5invis/Iosevka/releases/download/v4.5.0/ttf-iosevka-4.5.0.z
 https://github.com/be5invis/Iosevka/releases/download/v4.5.0/ttf-iosevka-fixed-4.5.0.zip
 https://github.com/microsoft/cascadia-code/releases/download/v2106.17/CascadiaCode-2106.17.zip
 https://github.com/tonsky/FiraCode/releases/download/5.2/Fira_Code_v5.2.zip
+https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/IBMPlexMono.zip
 EOF
 
 aria2c \
