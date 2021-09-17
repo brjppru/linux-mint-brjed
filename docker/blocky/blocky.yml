@@ -11,8 +11,8 @@
 
 upstream:
   default:
-    - tcp+udp:195.208.4.1 # RTK
-    - tcp+udp:195.208.5.1 # RTK
+#    - tcp+udp:195.208.4.1 # RTK
+#    - tcp+udp:195.208.5.1 # RTK
     - tcp-tls:1.1.1.1 # one.one.one.one
     - tcp-tls:1.0.0.1 # one.one.one.one
     - https://cloudflare-dns.com/dns-query
