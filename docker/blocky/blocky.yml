@@ -11,11 +11,16 @@
 
 upstream:
   default:
+    - tcp+udp:195.208.4.1 # RTK
+    - tcp+udp:195.208.5.1 # RTK
     - tcp-tls:1.1.1.1 # one.one.one.one
     - tcp-tls:1.0.0.1 # one.one.one.one
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
     - tcp-tls:fdns1.dismail.de:853
     - https://dns.digitale-gesellschaft.ch/dns-query
     - https://dns-unfiltered.adguard.com/dns-query
+    - https://doh.umbrella.com/dns-query
 blocking:
   blackLists:
     ads:
@@ -32,9 +37,14 @@ blocking:
 #
 port: 53
 httpPort: 4000
+#
 # optional: use this DNS server to resolve blacklist urls and upstream DNS servers (DOH). Useful if no DNS resolver is configured an
-bootstrapDns: tcp:1.1.1.1
-#bootstrapDns: tcp:94.140.14.140
+#bootstrapDns: tcp:1.1.1.1
+#
+# RTK ;-)
+#
+bootstrapDns: tcp:195.208.5.1
+#
 # optional: Drop all AAAA query if set to true. Default: false
 disableIPv6: true
 #
