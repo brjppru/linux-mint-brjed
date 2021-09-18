@@ -4,7 +4,10 @@ export DEBIAN_FRONTEND=noninteractive
 
 # need run? fix me
 
-exit
+# https://github.com/ogham/exa
+# https://the.exa.website/
+
+exit 0
 
 rm -rf /tmp/exa
 mkdir -p /tmp/exa
