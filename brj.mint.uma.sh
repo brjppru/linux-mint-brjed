@@ -184,7 +184,7 @@ sudo apt install -y picard
 sudo apt install -y mixxx
 sudo apt install -y tilix ccze bsd-mailx
 sudo apt install -y ghostwriter
-sudo apt install -y gtkhash
+sudo apt install -y gtkhash qalculate
 
 # =========================================================
 # fonts + theme's
