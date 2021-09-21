@@ -140,7 +140,7 @@ sudo apt install -y mlocate neofetch neovim net-tools nmap openssh-server
 sudo apt install -y rsync shellcheck sl speedtest-cli tmux unzip wget whois
 sudo apt install -y pavucontrol rofi memtest86+ ddccontrol
 sudo apt install -y pmount rsync sl speedtest-cli psmisc httping
-sudo apt install -y acpi arandr minicom 
+sudo apt install -y acpi arandr minicom jq
 sudo apt install -y cruft debsums
 sudo apt install -y screenruler numlockx
 sudo apt install -y tshark iftop sngrep ngrep sockstat linssid nmap
