@@ -4,7 +4,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 # need run? fix me
 
-exit 0
+#exit 0
 
 # https://github.com/ryanoasis/nerd-fonts/releases
 
