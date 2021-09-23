@@ -164,7 +164,7 @@ sudo apt install -y mc genisoimage
 sudo apt install -y giggle git gitg
 sudo apt install -y git zsh
 sudo apt install -y cowsay curl dpkg aria2 figlet lnav
-sudo apt install -y hardinfo bat dconf-editor edid-decode read-edid hwinfo
+sudo apt install -y hardinfo bat dconf-editor edid-decode read-edid hwinfo convmv
 sudo apt install -y intel-microcode amd64-microcode
 sudo apt install -y remmina remmina-plugin-rdp
 sudo apt install -y doublecmd-gtk
