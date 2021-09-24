@@ -150,7 +150,7 @@ sudo apt install -y gparted
 sudo apt install -y sublime-text
 sudo apt install -y telegram-desktop
 sudo apt install -y sqlite3 smbclient
-sudo apt install -y linphone
+sudo apt install -y linphone moreutils pv
 sudo apt install -y putty putty-tools
 sudo apt install -y git shellcheck tldr
 sudo apt install -y keepass2 keepassxc

@@ -32,6 +32,8 @@ fi
 # Set personal aliases, overriding those provided by oh-my-bash libs,
 
 shopt -s cdspell            # autocorrects cd misspellings
+shopt -s nocaseglob;        # Case-insensitive globbing (used in pathname expansion)
+shopt -s histappend;        # Append to the Bash history file, rather than overwriting it
 
 alias fuckup='systemctl --failed'
 alias fuck='sudo $(history -p \!\!)'
