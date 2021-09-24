@@ -191,6 +191,7 @@ sudo apt install -y gtkhash qalculate
 # =========================================================
 
 sudo apt install -y xfonts-terminus ttf-dejavu fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree xfonts-terminus-oblique
+sudo apt install -y fonts-roboto
 sudo apt install -y ttf-mscorefonts-installer fonts-dejavu fonts-liberation2 fonts-ubuntu fonts-powerline
 sudo apt install -y comixcursors-righthanded-opaque comixcursors-righthanded
 
@@ -199,6 +200,7 @@ sudo apt install -y comixcursors-righthanded-opaque comixcursors-righthanded
 # =========================================================
 
 #sudo apt install -y aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku hedgewars
+#sudo apt-get install aisleriot gnome-cards-data gnome-mines quadrapassel gnome-sudoku
 #sudo apt install -y ioquake3
 
 # =========================================================
