@@ -200,7 +200,7 @@ sudo apt install -y comixcursors-righthanded-opaque comixcursors-righthanded
 # =========================================================
 
 #sudo apt install -y aisleriot gnome-cards-data pysolfc gnome-2048 dosbox gnome-mahjongg gnome-mines gnome-sudoku hedgewars
-#sudo apt-get install aisleriot gnome-cards-data gnome-mines quadrapassel gnome-sudoku
+#sudo apt install -y aisleriot gnome-cards-data gnome-mines quadrapassel gnome-sudoku
 #sudo apt install -y ioquake3
 
 # =========================================================
