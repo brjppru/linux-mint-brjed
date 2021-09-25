@@ -168,7 +168,7 @@ sudo apt install -y hardinfo bat dconf-editor edid-decode read-edid hwinfo convm
 sudo apt install -y intel-microcode amd64-microcode
 sudo apt install -y remmina remmina-plugin-rdp
 sudo apt install -y doublecmd-gtk
-sudo apt install -y anydesk vbetool
+sudo apt install -y anydesk vbetool uptimed
 sudo apt install -y mediainfo command-not-found
 sudo apt install -y tilix fping
 sudo apt install -y ubuntu-restricted-extras mint-meta-codecs libavcodec-extra58 ffmpeg x264 lame vlc v4l-utils
