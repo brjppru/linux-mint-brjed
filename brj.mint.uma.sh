@@ -145,6 +145,7 @@ sudo apt install -y cruft debsums
 sudo apt install -y screenruler numlockx
 sudo apt install -y tshark iftop sngrep ngrep sockstat linssid nmap
 sudo apt install -y vim-nox fbreader
+sudo apt install -y shntool flac lame cuetools
 sudo apt install -y xclip xsel autocutsel
 sudo apt install -y gparted
 sudo apt install -y sublime-text
@@ -176,7 +177,7 @@ sudo apt install -y midori chromium-browser elinks links lynx
 sudo apt install -y cups cups-pdf
 sudo apt install -y gtk-redshift xournal
 sudo apt install -y dia graphviz xdot
-sudo apt install -y imagemagick
+sudo apt install -y imagemagick qrencode
 sudo apt install -y android-tools-adb android-tools-fastboot jmtpfs
 sudo apt install -y youtube-dl
 sudo apt install -y torbrowser-launcher

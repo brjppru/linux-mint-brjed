@@ -1,10 +1,10 @@
 #!/bin/bash -x
 
-# exa + dust
+# exa + dust + dunt + gdu? maybe
 
 export DEBIAN_FRONTEND=noninteractive
 
-exit
+exit 0
 
 # need run? fix me
 
