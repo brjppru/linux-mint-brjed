@@ -168,7 +168,7 @@ sudo apt install -y cowsay curl dpkg aria2 figlet lnav
 sudo apt install -y hardinfo bat dconf-editor edid-decode read-edid hwinfo convmv
 sudo apt install -y intel-microcode amd64-microcode
 sudo apt install -y remmina remmina-plugin-rdp
-sudo apt install -y doublecmd-gtk
+sudo apt install -y doublecmd-gtk easytag
 sudo apt install -y anydesk vbetool uptimed byobu
 sudo apt install -y mediainfo command-not-found
 sudo apt install -y tilix fping
