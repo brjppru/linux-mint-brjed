@@ -44,4 +44,6 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+. /usr/share/bash-completion/bash_completion
+
 #echo "ololo"
