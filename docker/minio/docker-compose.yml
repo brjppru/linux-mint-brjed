@@ -1,0 +1,16 @@
+version: "2"
+services:
+  minio:
+    image: minio/minio
+    container_name: minio
+    volumes:
+      - /tmp/minio:/data
+    ports:
+      - 9111:9000
+      - 9112:9001
+    environment:
+      - MINIO_ROOT_USER=zalupa
+      - MINIO_ROOT_PASSWORD=nosoroga
+    command:
+      ['server', '/data', '--address', '0.0.0.0:9000', '--console-address', '0.0.0.0:9001']
+    restart: unless-stopped
