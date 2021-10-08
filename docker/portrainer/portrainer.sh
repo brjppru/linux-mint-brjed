@@ -7,9 +7,9 @@ docker pull portainer/portainer-ce
 echo y | docker system prune --volumes
 
 sudo docker volume create portainer_data
+#    -p 8000:8000 \
 
 sudo docker run -d \
-    -p 8000:8000 \
     -p 9000:9000 \
     --name=portainer \
     --restart=always \

@@ -21,5 +21,6 @@ docker run -d \
     --name blocky \
     -v /opt/blocky.yml:/app/config.yml \
     -p 4000:4000 -p 53:53/udp \
+    --log-driver=journald \
     spx01/blocky
 
