@@ -182,7 +182,7 @@ sudo apt install -y android-tools-adb android-tools-fastboot jmtpfs
 sudo apt install -y youtube-dl
 sudo apt install -y torbrowser-launcher
 sudo apt install -y picard
-sudo apt install -y mixxx
+sudo apt install -y mixxx nethogs iotop chkservice
 sudo apt install -y tilix ccze bsd-mailx
 sudo apt install -y ghostwriter
 sudo apt install -y gtkhash qalculate
