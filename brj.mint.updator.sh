@@ -1,5 +1,8 @@
 #!/bin/bash -x
 
+# Stop on first error
+set -e
+
 export DEBIAN_FRONTEND=noninteractive
 
 # =========================================================
