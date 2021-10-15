@@ -6,6 +6,7 @@ set -o vi                   # Vi mode
 
 # Path to your oh-my-bash installation.
 export OSH=/home/brjed/.oh-my-bash
+#
 OSH_THEME="agnoster"
 DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
@@ -35,8 +36,10 @@ shopt -s cdspell            # autocorrects cd misspellings
 shopt -s nocaseglob;        # Case-insensitive globbing (used in pathname expansion)
 shopt -s histappend;        # Append to the Bash history file, rather than overwriting it
 
+#
 alias fuckup='systemctl --failed'
 alias fuck='sudo $(history -p \!\!)'
+#
 alias mc='. /usr/share/mc/bin/mc-wrapper.sh'
 
 # set PATH so it includes user's private bin if it exists
@@ -47,3 +50,8 @@ fi
 . /usr/share/bash-completion/bash_completion
 
 #echo "ololo"
+
+export HISTSIZE=10000
+export HISTTIMEFORMAT="%h %d %H:%M:%S "
+PROMPT_COMMAND='history -a'
+export HISTIGNORE="ls:ll:history:w:htop:pwd"
