@@ -13,11 +13,13 @@ rm -rf /tmp/debs/debs.txt
 # get my good's
 
 tee <<EOF /tmp/debs/debs.txt >/dev/null
+https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 https://zoom.us/client/latest/zoom_amd64.deb
 https://www.rescuetime.com/installers/rescuetime_current_amd64.deb
 https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/nemo-megasync-xUbuntu_20.04_amd64.deb
 https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
 https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-1.24-Update7-Ubuntu-20.04-amd64.deb
+https://launchpad.net/veracrypt/trunk/1.24-update7/+download/veracrypt-console-1.24-Update7-Ubuntu-20.04-amd64.deb
 https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb
 https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
 https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktopeditors_amd64.deb
@@ -36,5 +38,5 @@ echo "pochti. all done"
 exit 0
 
 cd /tmp/debs
-dpkg -i *.dev
+dpkg -i *.deb
 sudo apt -y --fix-broken install
