@@ -26,6 +26,7 @@ https://download.onlyoffice.com/install/desktop/editors/linux/onlyoffice-desktop
 https://github.com/muesli/duf/releases/download/v0.6.2/duf_0.6.2_linux_amd64.deb
 https://www.xmind.net/zen/download/linux_deb/
 https://github.com/jgraph/drawio-desktop/releases/download/v14.9.6/drawio-amd64-14.9.6.deb
+https://github.com/Kong/insomnia/releases/download/core@2021.5.3/Insomnia.Core-2021.5.3.deb
 EOF
 
 aria2c \
