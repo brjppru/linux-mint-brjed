@@ -1,6 +1,8 @@
 #!/bin/sh
 
-for f in /home/brjed/.thunderbird/*/*.sqlite; 
+killall -9 thunderbird
+
+for f in ${HOME}/.thunderbird/*/*.sqlite; 
     do 
     echo $f
     ls -la $f
