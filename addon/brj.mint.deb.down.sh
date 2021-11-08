@@ -27,6 +27,7 @@ https://github.com/muesli/duf/releases/download/v0.6.2/duf_0.6.2_linux_amd64.deb
 https://www.xmind.net/zen/download/linux_deb/
 https://github.com/jgraph/drawio-desktop/releases/download/v14.9.6/drawio-amd64-14.9.6.deb
 https://github.com/Kong/insomnia/releases/download/core@2021.5.3/Insomnia.Core-2021.5.3.deb
+https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_95.0.1020.44-1_amd64.deb
 EOF
 
 aria2c \
