@@ -154,7 +154,7 @@ sudo apt install -y sqlite3 smbclient
 sudo apt install -y linphone moreutils pv
 sudo apt install -y putty putty-tools
 sudo apt install -y git shellcheck tldr
-sudo apt install -y keepass2 keepassxc
+sudo apt install -y xdotool keepass2 keepassxc
 sudo apt install -y molly-guard ncdu openssh-server htop powertop uget preload
 sudo apt install -y pollinate smartmontools ethtool fdupes keychain ssh-askpass
 sudo apt install -y gnome-contacts gnome-maps gnome-system-monitor caffeine qbittorrent
