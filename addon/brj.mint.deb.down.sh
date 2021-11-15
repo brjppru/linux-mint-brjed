@@ -8,6 +8,7 @@ exit 0
 
 mkdir -p /tmp/debs
 cd /tmp/debs
+
 rm -rf /tmp/debs/debs.txt
 
 # get my good's
