@@ -29,6 +29,7 @@ https://github.com/jgraph/drawio-desktop/releases/download/v14.9.6/drawio-amd64-
 https://github.com/Kong/insomnia/releases/download/core@2021.5.3/Insomnia.Core-2021.5.3.deb
 https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_95.0.1020.44-1_amd64.deb
 https://github.com/rs/curlie/releases/download/v1.6.7/curlie_1.6.7_linux_amd64.deb
+https://github.com/PowerShell/PowerShell/releases/download/v7.2.0/powershell-lts_7.2.0-1.deb_amd64.deb
 EOF
 
 aria2c \
