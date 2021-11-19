@@ -4,7 +4,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 # need run? fix me
 
-exit 0
+#exit 0
 
 mkdir -p /tmp/debs
 cd /tmp/debs
