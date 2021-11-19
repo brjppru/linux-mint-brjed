@@ -179,7 +179,7 @@ sudo apt install -y gtk-redshift xournal
 sudo apt install -y dia graphviz xdot
 sudo apt install -y imagemagick qrencode
 sudo apt install -y android-tools-adb android-tools-fastboot jmtpfs
-sudo apt install -y youtube-dl
+sudo apt install -y youtube-dl pwgen
 sudo apt install -y torbrowser-launcher
 sudo apt install -y picard
 sudo apt install -y mixxx nethogs iotop chkservice
