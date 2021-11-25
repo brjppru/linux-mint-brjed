@@ -8,7 +8,10 @@ dator() {
 
 zoneinfo=/usr/share/zoneinfo/posix/
 
-format='%a %F %T'
+#format='%a %F %T'
+
+format='%a %F %T [%V/%j] %Y-%m-%d  %H:%M'
+
 
 find -L $zoneinfo -type f \
     | grep -i "$search" \
