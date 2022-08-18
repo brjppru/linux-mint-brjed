@@ -2,11 +2,6 @@
 
 export DEBIAN_FRONTEND=noninteractive
 
-# this is the brj linux mint bolgenos script ;-)
-# http://brj.pp.ru/
-#
-# bolgenos for linuxmint-20.2-cinnamon-64bit.iso
-#
 # do not connect to internet and download updates
 
 # =========================================================
@@ -42,7 +37,6 @@ sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
 sudo apt purge -y apparmor
 sudo apt purge -y transmission-common transmission-gtk
-#sudo apt purge -y thunderbird thunderbird-gnome-support
 
 # =========================================================
 # preinstall needs
@@ -64,11 +58,11 @@ figlet "add repos's"
 # =========================================================
 
 # wine
-wget -qO - https://dl.winehq.org/wine-builds/winehq.key | apt-key add -
-sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' 
+#wget -qO - https://dl.winehq.org/wine-builds/winehq.key | apt-key add -
+#sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' 
 
 # mixxx
-sudo add-apt-repository -y ppa:mixxx/mixxx
+#sudo add-apt-repository -y ppa:mixxx/mixxx
 
 # anydesk
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
@@ -76,7 +70,7 @@ echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-st
 
 # down. makr down.
 # https://github.com/wereturtle/ghostwriter/releases
-sudo add-apt-repository -y ppa:wereturtle/ppa
+#sudo add-apt-repository -y ppa:wereturtle/ppa
 
 # =========================================================
 # sysup
@@ -117,7 +111,7 @@ sysup
 # wine 
 # =========================================================
 
-sudo apt install -y --install-recommends winehq-stable
+#sudo apt install -y --install-recommends winehq-stable
 
 # =========================================================
 # begin install's
@@ -192,7 +186,7 @@ sudo apt install -y gtkhash qalculate
 # =========================================================
 
 sudo apt install -y xfonts-terminus ttf-dejavu fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree xfonts-terminus-oblique
-sudo apt install -y fonts-roboto
+sudo apt install -y fonts-roboto fonts-firacode
 sudo apt install -y ttf-mscorefonts-installer fonts-dejavu fonts-liberation2 fonts-ubuntu fonts-powerline
 sudo apt install -y comixcursors-righthanded-opaque comixcursors-righthanded
 
