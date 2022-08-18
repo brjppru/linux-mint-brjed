@@ -1,5 +1,7 @@
 #!/bin/bash -x
 
+set -e
+
 export DEBIAN_FRONTEND=noninteractive
 
 # do not connect to internet and download updates
@@ -33,7 +35,7 @@ sudo apt install -y language-pack-en language-pack-gnome-en language-pack-gnome-
 # begin up keys + ppa
 # =========================================================
 
-sudo service apparmor stop
+#sudo service apparmor stop
 sudo update-rc.d -f apparmor remove
 sudo apt purge -y apparmor
 sudo apt purge -y transmission-common transmission-gtk
@@ -42,7 +44,7 @@ sudo apt purge -y transmission-common transmission-gtk
 # preinstall needs
 # =========================================================
 
-sudo apt update -y
+#sudo apt update -y
 
 sudo apt install -y apt-transport-https ca-certificates aptitude dpkg apt-file git git-flow tig figlet etckeeper boxes
 
@@ -65,8 +67,8 @@ figlet "add repos's"
 #sudo add-apt-repository -y ppa:mixxx/mixxx
 
 # anydesk
-wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
-echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+#wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+#echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
 
 # down. makr down.
 # https://github.com/wereturtle/ghostwriter/releases
@@ -99,13 +101,14 @@ sysup() {
 
     figlet "update db"
     sudo updatedb
-    sudo rm "/var/crash/*"
+#    sudo mkdir -p /var/crash/
+#    sudo rm /var/crash/*
     figlet "done"
 }
 
 # "
 
-sysup
+#sysup
 
 # =========================================================
 # wine 
@@ -132,11 +135,15 @@ sudo apt install -y apt-file apt-show-versions apt-utils aptitude
 sudo apt install -y cowsay cryptsetup curl figlet git gnupg htop keychain lolcat
 sudo apt install -y mlocate neofetch neovim net-tools nmap openssh-server
 sudo apt install -y rsync shellcheck sl speedtest-cli tmux unzip wget whois pigz
-sudo apt install -y pavucontrol rofi memtest86+ ddccontrol
+sudo apt install -y pavucontrol rofi memtest86+ ddccontrol vainfo libgl1 libegl1
 sudo apt install -y pmount rsync sl speedtest-cli psmisc httping
-sudo apt install -y acpi arandr minicom jq
-sudo apt install -y cruft debsums
-sudo apt install -y screenruler numlockx
+sudo apt install -y acpi arandr minicom jq exfatprogs exfat-fuse
+sudo apt install -y cruft debsums apt-file apt-show-versions apt-utils aptitude cowsay htop neovim
+sudo apt install -y moreutils tree curl wget tmux apache2-utils unzip p7zip-full p7zip-rar pbzip2 unrar gettext xclip
+sudo apt install -y linux-tools-generic htop iotop strace ltrace tcpdump lsof lshw
+sudo apt install -y mtr traceroute nmap arp-scan
+sudo apt install -y zsh vim git gitk tig shellcheck xsel sloccount jq httpie ripgrep bat meld
+sudo apt install -y screenruler numlockx openssh-server rsync sl tmux
 sudo apt install -y tshark iftop sngrep ngrep sockstat linssid nmap
 sudo apt install -y vim-nox fbreader
 sudo apt install -y shntool flac lame cuetools
@@ -158,20 +165,21 @@ sudo apt install -y zip unzip p7zip p7zip-rar rar unrar
 sudo apt install -y mc genisoimage
 sudo apt install -y giggle git gitg
 sudo apt install -y git zsh
+sudo apt install -y hunspell-en-us hunspell-ru
 sudo apt install -y cowsay curl dpkg aria2 figlet lnav
 sudo apt install -y hardinfo bat dconf-editor edid-decode read-edid hwinfo convmv
 sudo apt install -y intel-microcode amd64-microcode qemu-guest-agent
 sudo apt install -y remmina remmina-plugin-rdp
 sudo apt install -y doublecmd-gtk easytag
-sudo apt install -y anydesk vbetool uptimed byobu
+sudo apt install -y vbetool uptimed byobu
 sudo apt install -y mediainfo command-not-found
 sudo apt install -y tilix fping
 sudo apt install -y ubuntu-restricted-extras mint-meta-codecs libavcodec-extra58 ffmpeg x264 lame vlc v4l-utils
-sudo apt install -y midori chromium-browser elinks links lynx
+sudo apt install -y chromium-browser elinks links lynx
 sudo apt install -y cups cups-pdf
-sudo apt install -y gtk-redshift xournal
+sudo apt install -y redshift redshift-gtk xournal
 sudo apt install -y dia graphviz xdot
-sudo apt install -y imagemagick qrencode
+sudo apt install -y imagemagick qrencode pandoc flameshot
 sudo apt install -y android-tools-adb android-tools-fastboot jmtpfs
 sudo apt install -y youtube-dl pwgen
 sudo apt install -y torbrowser-launcher
@@ -179,13 +187,32 @@ sudo apt install -y picard
 sudo apt install -y mixxx nethogs iotop chkservice
 sudo apt install -y tilix ccze bsd-mailx
 sudo apt install -y ghostwriter
-sudo apt install -y gtkhash qalculate
+sudo apt install -y gtkhash qalculate-gtk
+
+# =========================================================
+# python + qt
+# =========================================================
+
+apt-get install --yes --no-install-recommends \
+    python3 \
+    python3-dev
+
+apt-get install --yes --no-install-recommends \
+    libpq-dev \
+    libssl-dev \
+    libjpeg-dev \
+    zlib1g-dev
+
+# Configuration for some QT apps
+apt-get install --yes --no-install-recommends \
+    qt5ct
 
 # =========================================================
 # fonts + theme's
 # =========================================================
 
-sudo apt install -y xfonts-terminus ttf-dejavu fonts-droid-fallback ttf-dejavu ttf-xfree86-nonfree xfonts-terminus-oblique
+sudo apt install -y fonts-liberation ttf-mscorefonts-installer xfonts-terminus fonts-dejavu-extra fonts-dejavu fonts-dejavu-core fonts-hack
+sudo apt install -y xfonts-terminus fonts-dejavu fonts-droid-fallback ttf-xfree86-nonfree xfonts-terminus-oblique
 sudo apt install -y fonts-roboto fonts-firacode
 sudo apt install -y ttf-mscorefonts-installer fonts-dejavu fonts-liberation2 fonts-ubuntu fonts-powerline
 sudo apt install -y comixcursors-righthanded-opaque comixcursors-righthanded
