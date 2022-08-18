@@ -14,7 +14,7 @@ Yes. This is 126% bolgenos linux mint install script. ¯\_(ツ)_/¯
 
 And why would it be?
 
-## 🤖 Uma?
+## 🤖 Vanessa?
 
 - This is Linux Mint 21, codename Vanessa.
 - Linux Mint 21 is a long term support release which will be supported until 2027. 
