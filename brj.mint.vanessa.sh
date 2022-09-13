@@ -130,7 +130,7 @@ echo libbcg729-0:amd64	libbcg729-0/patent_compliance	boolean	true | debconf-set-
 # begin install's
 # =========================================================
 
-sudo apt install -y ssmtp whois mlocate net-tools pmount rsync tmux vrms bc net-tools libnss-mdns
+sudo apt install -y ssmtp whois mlocate net-tools pmount rsync tmux vrms bc net-tools libnss-mdns mdns-scan
 sudo apt install -y apt-file apt-show-versions apt-utils aptitude
 sudo apt install -y cowsay cryptsetup curl figlet git gnupg htop keychain lolcat
 sudo apt install -y mlocate neofetch neovim net-tools nmap openssh-server
