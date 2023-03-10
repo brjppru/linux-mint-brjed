@@ -1,4 +1,4 @@
-# 🐍 Linux mint (vanessa)
+# 🐍 Linux mint
 
 Hi! I use linux mint on my workstation. 🐶 it's my current pet-project.
 
@@ -16,8 +16,8 @@ And why would it be?
 
 ## 🤖 Vanessa?
 
-- This is Linux Mint 21, codename Vanessa.
-- Linux Mint 21 is a long term support release which will be supported until 2027. 
+- This is Linux Mint 21.1, codename Vera
+- Linux Mint 21.1 is a long term support release which will be supported until 2027
 - 🔭 linuxmint-21-cinnamon-64bit.iso
 
 # The end
