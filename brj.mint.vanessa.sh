@@ -60,19 +60,19 @@ figlet "add repos's"
 # =========================================================
 
 # wine
-#wget -qO - https://dl.winehq.org/wine-builds/winehq.key | apt-key add -
-#sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' 
+# wget -qO - https://dl.winehq.org/wine-builds/winehq.key | apt-key add -
+# sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main' 
 
 # mixxx
-#sudo add-apt-repository -y ppa:mixxx/mixxx
+# sudo add-apt-repository -y ppa:mixxx/mixxx
 
 # anydesk
-#wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
-#echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
+# wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+# echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
 
 # down. makr down.
 # https://github.com/wereturtle/ghostwriter/releases
-#sudo add-apt-repository -y ppa:wereturtle/ppa
+# sudo add-apt-repository -y ppa:wereturtle/ppa
 
 # =========================================================
 # sysup
